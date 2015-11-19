@@ -1,5 +1,7 @@
 # Category
 
+
+扩展类集合
 UIImage+TwoDimensionCode.h
 
 二维码的生成
@@ -14,7 +16,7 @@ UIImage+TwoDimensionCode.h
             *
             @return 二维码图
             */
-        (UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize;
+        +(UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize;
 
             /**
             生成彩色二维码
@@ -27,7 +29,7 @@ UIImage+TwoDimensionCode.h
             *
             @return 彩色二维码 空余部位是透明色
             */
-        (UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue;
+        +(UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue;
         /**
             中间带有头像的彩色二维码
             *
@@ -41,7 +43,7 @@ UIImage+TwoDimensionCode.h
             *
             @return 中间带有头像的彩色二维码
             */
-        (UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue insertImage: (UIImage *)insertImage roundRadius: (CGFloat)roundRadius;
+        +(UIImage )imageOfQRFromURL: (NSString )networkAddress codeSize: (CGFloat)codeSize red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue insertImage: (UIImage *)insertImage roundRadius: (CGFloat)roundRadius;
 
 Compute.h
 
@@ -57,7 +59,7 @@ Compute.h
             *
             @return 距离
             */
-        (double)distanceBetweenPoints:(CGPoint)point1 point2:(CGPoint)point2;
+        -(double)distanceBetweenPoints:(CGPoint)point1 point2:(CGPoint)point2;
 
             /**
             两个点的夹角
@@ -67,7 +69,7 @@ Compute.h
             *
             @return 夹角
             */
-        (double)angleBetweenPoints:(CGPoint)point1 point2:(CGPoint)point2;
+        -(double)angleBetweenPoints:(CGPoint)point1 point2:(CGPoint)point2;
         /**
         *
             两条线的夹角
@@ -78,6 +80,8 @@ Compute.h
             *
             @return 夹角
             */
-        (double)angleBetweenLines:(CGPoint)line1StartPoint line1EndPoint:(CGPoint)line1EndPoint line2StartPoint:(CGPoint)line2StartPoint line2EndPoint:(CGPoint)line2EndPoint;
+        -(double)angleBetweenLines:(CGPoint)line1StartPoint line1EndPoint:(CGPoint)line1EndPoint line2StartPoint:(CGPoint)line2StartPoint line2EndPoint:(CGPoint)line2EndPoint;
+
+
 
 
