@@ -15,6 +15,7 @@
 		8109A9C21BE7530A00EE7882 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8109A9C01BE7530A00EE7882 /* LaunchScreen.xib */; };
 		8109A9CE1BE7530B00EE7882 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9CD1BE7530B00EE7882 /* CategoryTests.m */; };
 		8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */; };
+		81F239EC1BFD96E100CD85DB /* Compute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F239EB1BFD96E100CD85DB /* Compute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		8109A9CD1BE7530B00EE7882 /* CategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		8109A9D81BE7539C00EE7882 /* UIImage+TwoDimensionCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TwoDimensionCode.h"; sourceTree = "<group>"; };
 		8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TwoDimensionCode.m"; sourceTree = "<group>"; };
+		81F239EA1BFD96E100CD85DB /* Compute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compute.h; sourceTree = "<group>"; };
+		81F239EB1BFD96E100CD85DB /* Compute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				81F239E91BFD96E100CD85DB /* 角度和距离 */,
 				8109A9D71BE7536800EE7882 /* UIImage */,
 				8109A9B51BE7530A00EE7882 /* AppDelegate.h */,
 				8109A9B61BE7530A00EE7882 /* AppDelegate.m */,
@@ -130,6 +134,15 @@
 				8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		81F239E91BFD96E100CD85DB /* 角度和距离 */ = {
+			isa = PBXGroup;
+			children = (
+				81F239EA1BFD96E100CD85DB /* Compute.h */,
+				81F239EB1BFD96E100CD85DB /* Compute.m */,
+			);
+			path = "角度和距离";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F239EC1BFD96E100CD85DB /* Compute.m in Sources */,
 				8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */,
 				8109A9BA1BE7530A00EE7882 /* ViewController.m in Sources */,
 				8109A9B71BE7530A00EE7882 /* AppDelegate.m in Sources */,
@@ -432,6 +446,7 @@
 				8109A9D31BE7530B00EE7882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8109A9D41BE7530B00EE7882 /* Build configuration list for PBXNativeTarget "CategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +455,7 @@
 				8109A9D61BE7530B00EE7882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

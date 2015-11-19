@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+TwoDimensionCode.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    //二维码
+    UIImage *image = [UIImage imageOfQRFromURL:@"www.baidu.com" codeSize:10];
+    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    view.image = image;
+    [self.view addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning {

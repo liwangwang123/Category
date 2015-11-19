@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C1432C7B-22FB-410D-A8BF-6FEE4D7CB381</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Category</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1CF736F231487DCB8728D992759D42A72E884BE5</key>
 		<string>https://github.com/liwangwang123/Category.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Category/Category.xcodeproj/project.xcworkspace</string>
+	<string>Category/Category.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1CF736F231487DCB8728D992759D42A72E884BE5</key>
