@@ -83,5 +83,16 @@ Compute.h
         -(double)angleBetweenLines:(CGPoint)line1StartPoint line1EndPoint:(CGPoint)line1EndPoint line2StartPoint:(CGPoint)line2StartPoint line2EndPoint:(CGPoint)line2EndPoint;
 
 
+Timer.h
 
+时间处理
 
+    说明
+
+        /**
+            倒计时显示
+            *
+           @param timeout 倒计时间
+           这个方法里面只有对时间的处理,没有显示视图,需要根据具体要求,具体处理
+            */
+        - (void)countdownCounterStart:(NSInteger)timeout;
