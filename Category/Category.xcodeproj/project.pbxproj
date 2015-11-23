@@ -15,6 +15,9 @@
 		8109A9C21BE7530A00EE7882 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8109A9C01BE7530A00EE7882 /* LaunchScreen.xib */; };
 		8109A9CE1BE7530B00EE7882 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9CD1BE7530B00EE7882 /* CategoryTests.m */; };
 		8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */; };
+		81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47ED1C02BA7A00D010DF /* about_Info.png */; };
+		81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47EE1C02BA7A00D010DF /* add_download_more.png */; };
+		81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF47F01C02BA7A00D010DF /* DDImageView.m */; };
 		81F239EC1BFD96E100CD85DB /* Compute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F239EB1BFD96E100CD85DB /* Compute.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,10 @@
 		8109A9CD1BE7530B00EE7882 /* CategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		8109A9D81BE7539C00EE7882 /* UIImage+TwoDimensionCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TwoDimensionCode.h"; sourceTree = "<group>"; };
 		8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TwoDimensionCode.m"; sourceTree = "<group>"; };
+		81EF47ED1C02BA7A00D010DF /* about_Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_Info.png; sourceTree = "<group>"; };
+		81EF47EE1C02BA7A00D010DF /* add_download_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_download_more.png; sourceTree = "<group>"; };
+		81EF47EF1C02BA7A00D010DF /* DDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImageView.h; sourceTree = "<group>"; };
+		81EF47F01C02BA7A00D010DF /* DDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDImageView.m; sourceTree = "<group>"; };
 		81F239EA1BFD96E100CD85DB /* Compute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compute.h; sourceTree = "<group>"; };
 		81F239EB1BFD96E100CD85DB /* Compute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +94,7 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				81EF47EC1C02BA7A00D010DF /* 图片绘制 */,
 				81F239E91BFD96E100CD85DB /* 角度和距离 */,
 				8109A9D71BE7536800EE7882 /* UIImage */,
 				8109A9B51BE7530A00EE7882 /* AppDelegate.h */,
@@ -134,6 +142,17 @@
 				8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		81EF47EC1C02BA7A00D010DF /* 图片绘制 */ = {
+			isa = PBXGroup;
+			children = (
+				81EF47ED1C02BA7A00D010DF /* about_Info.png */,
+				81EF47EE1C02BA7A00D010DF /* add_download_more.png */,
+				81EF47EF1C02BA7A00D010DF /* DDImageView.h */,
+				81EF47F01C02BA7A00D010DF /* DDImageView.m */,
+			);
+			path = "图片绘制";
 			sourceTree = "<group>";
 		};
 		81F239E91BFD96E100CD85DB /* 角度和距离 */ = {
@@ -228,6 +247,8 @@
 				8109A9BD1BE7530A00EE7882 /* Main.storyboard in Resources */,
 				8109A9C21BE7530A00EE7882 /* LaunchScreen.xib in Resources */,
 				8109A9BF1BE7530A00EE7882 /* Images.xcassets in Resources */,
+				81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */,
+				81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */,
 				81F239EC1BFD96E100CD85DB /* Compute.m in Sources */,
 				8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */,
 				8109A9BA1BE7530A00EE7882 /* ViewController.m in Sources */,
