@@ -19,6 +19,7 @@
 		81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47EE1C02BA7A00D010DF /* add_download_more.png */; };
 		81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF47F01C02BA7A00D010DF /* DDImageView.m */; };
 		81F239EC1BFD96E100CD85DB /* Compute.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F239EB1BFD96E100CD85DB /* Compute.m */; };
+		81F2D2191C0C4A410058D6EB /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F2D2181C0C4A410058D6EB /* LoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		81EF47F01C02BA7A00D010DF /* DDImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDImageView.m; sourceTree = "<group>"; };
 		81F239EA1BFD96E100CD85DB /* Compute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compute.h; sourceTree = "<group>"; };
 		81F239EB1BFD96E100CD85DB /* Compute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compute.m; sourceTree = "<group>"; };
+		81F2D2171C0C4A410058D6EB /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		81F2D2181C0C4A410058D6EB /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				81F2D2161C0C4A410058D6EB /* 登录界面 */,
 				81EF47EC1C02BA7A00D010DF /* 图片绘制 */,
 				81F239E91BFD96E100CD85DB /* 角度和距离 */,
 				8109A9D71BE7536800EE7882 /* UIImage */,
@@ -162,6 +166,15 @@
 				81F239EB1BFD96E100CD85DB /* Compute.m */,
 			);
 			path = "角度和距离";
+			sourceTree = "<group>";
+		};
+		81F2D2161C0C4A410058D6EB /* 登录界面 */ = {
+			isa = PBXGroup;
+			children = (
+				81F2D2171C0C4A410058D6EB /* LoginView.h */,
+				81F2D2181C0C4A410058D6EB /* LoginView.m */,
+			);
+			path = "登录界面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 			files = (
 				81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */,
 				81F239EC1BFD96E100CD85DB /* Compute.m in Sources */,
+				81F2D2191C0C4A410058D6EB /* LoginView.m in Sources */,
 				8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */,
 				8109A9BA1BE7530A00EE7882 /* ViewController.m in Sources */,
 				8109A9B71BE7530A00EE7882 /* AppDelegate.m in Sources */,
