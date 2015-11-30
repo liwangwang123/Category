@@ -121,8 +121,8 @@ LoginView.h
     BOOL   _isRememberPassword;//记住密码
 }
 
-# @property (nonatomic, strong) UIImageView       *headerView;//头像
-# @property (nonatomic, strong) UILabel           *nameLabel;//姓名
+tap @property (nonatomic, strong) UIImageView       *headerView;//头像 tap
+tap@property (nonatomic, strong) UILabel           *nameLabel;//姓名tap
 @property (nonatomic, strong) UITextField       *nameTextField;//用户名
 @property (nonatomic, strong) UITextField       *passwordTextField;//密码
 @property (nonatomic, strong) UIButton          *getDynamicPasswordBtn;//获取动态密码
