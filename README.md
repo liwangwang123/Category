@@ -98,12 +98,9 @@ Timer.h
         - (void)countdownCounterStart:(NSInteger)timeout;
 
 
-LoginView.h
-=============
+**LoginView.h**
 
-代理方法
-----------
-@protocol LoginViewDelegate <NSObject>//代理
+ 1. @protocol LoginViewDelegate <NSObject>
 
 - (void)getDynamicPasswordBtnAction:(UIButton *)sender;//获取动态密码
 - (void)rememberAction:(BOOL)isRememberPassword;//记住密码
@@ -113,16 +110,14 @@ LoginView.h
 
 @end
 
-属性
------
 @interface LoginView : UIView <UITextFieldDelegate> {
     CGRect _keyboardFrame;//键盘的frame
     CGRect _nextTextfieldFrame;//上一个textField的frame
     BOOL   _isRememberPassword;//记住密码
 }
 
-tap @property (nonatomic, strong) UIImageView       *headerView;//头像 tap
-tap@property (nonatomic, strong) UILabel           *nameLabel;//姓名tap
+@property (nonatomic, strong) UIImageView       *headerView;//头像
+@property (nonatomic, strong) UILabel           *nameLabel;//姓名
 @property (nonatomic, strong) UITextField       *nameTextField;//用户名
 @property (nonatomic, strong) UITextField       *passwordTextField;//密码
 @property (nonatomic, strong) UIButton          *getDynamicPasswordBtn;//获取动态密码
@@ -141,23 +136,26 @@ tap@property (nonatomic, strong) UILabel           *nameLabel;//姓名tap
 
 @property (nonatomic, weak  ) id<LoginViewDelegate> delegate;
 
-使用方法:
-LoginView *login = [[LoginView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+@end
+
+**使用方法**
+
+ 1. self.login = [[LoginView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     _login.delegate = self;
     [self.view addSubview:_login];
-    其中有一个需要特别处理
-    //移动父视图
+    
+//移动父视图,这个方法需要在调用界面处理
 - (void)moveTextfieldView:(CGFloat)space {
     [UIView animateWithDuration:0.5 animations:^{
-        if (space == 50.0 || space == -50.0) {//第二次和之后的点击textfield ,50是两个textField的Y间距
+        if (space == 50.0 || space == -50.0) {//第二次和之后的点击textfield 50是连个textField的Y间距
             CGRect frame = _login.frame;
             frame.origin.y = frame.origin.y + space;
-            //NSLog(@"frame1 = %f", frame.origin.y);
+            NSLog(@"frame1 = %f", frame.origin.y);
             _login.frame = frame;
         } else {//第一次点击textField
             CGRect frame = _login.frame;
             frame.origin.y = space;
-            //NSLog(@"frame2 = %f", frame.origin.y);
+            NSLog(@"frame2 = %f", frame.origin.y);
             _login.frame = frame;
         }
     }];
