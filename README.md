@@ -101,7 +101,8 @@ Timer.h
 LoginView.h
 =============
 
-
+代理方法
+----------
 @protocol LoginViewDelegate <NSObject>//代理
 
 - (void)getDynamicPasswordBtnAction:(UIButton *)sender;//获取动态密码
@@ -112,14 +113,16 @@ LoginView.h
 
 @end
 
+属性
+-----
 @interface LoginView : UIView <UITextFieldDelegate> {
     CGRect _keyboardFrame;//键盘的frame
     CGRect _nextTextfieldFrame;//上一个textField的frame
     BOOL   _isRememberPassword;//记住密码
 }
 
-@property (nonatomic, strong) UIImageView       *headerView;//头像
-@property (nonatomic, strong) UILabel           *nameLabel;//姓名
+# @property (nonatomic, strong) UIImageView       *headerView;//头像
+# @property (nonatomic, strong) UILabel           *nameLabel;//姓名
 @property (nonatomic, strong) UITextField       *nameTextField;//用户名
 @property (nonatomic, strong) UITextField       *passwordTextField;//密码
 @property (nonatomic, strong) UIButton          *getDynamicPasswordBtn;//获取动态密码
