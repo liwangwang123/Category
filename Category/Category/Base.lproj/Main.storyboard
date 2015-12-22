@@ -27,13 +27,29 @@
                                     <segue destination="gXY-hD-MPV" kind="push" id="cl7-MQ-mb3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLS-Ov-1He">
+                                <rect key="frame" x="256" y="110" width="60" height="30"/>
+                                <animations/>
+                                <state key="normal" title="申请步骤"/>
+                                <connections>
+                                    <segue destination="y1V-85-Y3p" kind="push" id="1Od-Ou-KhX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BLS-Ov-1He" secondAttribute="trailing" constant="-12" id="H3m-hI-nQF"/>
                             <constraint firstItem="r8j-Zg-6ve" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="TkG-HI-dNu"/>
+                            <constraint firstItem="BLS-Ov-1He" firstAttribute="top" secondItem="r8j-Zg-6ve" secondAttribute="bottom" constant="8" id="YW4-j1-Ydf"/>
+                            <constraint firstItem="BLS-Ov-1He" firstAttribute="centerX" secondItem="r8j-Zg-6ve" secondAttribute="centerX" id="cQ8-be-FtA"/>
                             <constraint firstItem="r8j-Zg-6ve" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="giF-y3-n0l"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cQ8-be-FtA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="hkF-4Q-asd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -41,6 +57,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="345" y="317"/>
+        </scene>
+        <!--Progress Bar Controller-->
+        <scene sceneID="jYR-Rd-Cjm">
+            <objects>
+                <viewController id="y1V-85-Y3p" customClass="ProgressBarController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WeG-OQ-RVt"/>
+                        <viewControllerLayoutGuide type="bottom" id="bb4-sQ-zAZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qCh-HS-y4x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uh5-NM-9x2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3D3-NJ-mfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711" y="317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eof-g5-iZE">

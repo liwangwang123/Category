@@ -18,6 +18,10 @@
 		817849EB1C28E2B80070ED12 /* CustomerServiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817849EA1C28E2B80070ED12 /* CustomerServiceView.m */; settings = {ASSET_TAGS = (); }; };
 		817849EF1C29197D0070ED12 /* AnimationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817849EE1C29197D0070ED12 /* AnimationsController.m */; settings = {ASSET_TAGS = (); }; };
 		817849F11C291C960070ED12 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817849F01C291C960070ED12 /* 01.jpg */; settings = {ASSET_TAGS = (); }; };
+		81784A031C294A310070ED12 /* WLProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 817849FF1C294A310070ED12 /* WLProgressBar.m */; settings = {ASSET_TAGS = (); }; };
+		81784A041C294A310070ED12 /* WLProgressBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81784A011C294A310070ED12 /* WLProgressBarBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
+		81784A051C294A310070ED12 /* 效果图.png in Resources */ = {isa = PBXBuildFile; fileRef = 81784A021C294A310070ED12 /* 效果图.png */; settings = {ASSET_TAGS = (); }; };
+		81784A081C294AED0070ED12 /* ProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81784A071C294AED0070ED12 /* ProgressBarController.m */; settings = {ASSET_TAGS = (); }; };
 		81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47ED1C02BA7A00D010DF /* about_Info.png */; };
 		81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47EE1C02BA7A00D010DF /* add_download_more.png */; };
 		81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF47F01C02BA7A00D010DF /* DDImageView.m */; };
@@ -56,6 +60,13 @@
 		817849ED1C29197D0070ED12 /* AnimationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsController.h; sourceTree = "<group>"; };
 		817849EE1C29197D0070ED12 /* AnimationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsController.m; sourceTree = "<group>"; };
 		817849F01C291C960070ED12 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
+		817849FE1C294A310070ED12 /* WLProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProgressBar.h; sourceTree = "<group>"; };
+		817849FF1C294A310070ED12 /* WLProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLProgressBar.m; sourceTree = "<group>"; };
+		81784A001C294A310070ED12 /* WLProgressBarBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProgressBarBackgroundView.h; sourceTree = "<group>"; };
+		81784A011C294A310070ED12 /* WLProgressBarBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLProgressBarBackgroundView.m; sourceTree = "<group>"; };
+		81784A021C294A310070ED12 /* 效果图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "效果图.png"; sourceTree = "<group>"; };
+		81784A061C294AED0070ED12 /* ProgressBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressBarController.h; sourceTree = "<group>"; };
+		81784A071C294AED0070ED12 /* ProgressBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressBarController.m; sourceTree = "<group>"; };
 		81EF47ED1C02BA7A00D010DF /* about_Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_Info.png; sourceTree = "<group>"; };
 		81EF47EE1C02BA7A00D010DF /* add_download_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_download_more.png; sourceTree = "<group>"; };
 		81EF47EF1C02BA7A00D010DF /* DDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImageView.h; sourceTree = "<group>"; };
@@ -105,6 +116,7 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				817849FD1C294A310070ED12 /* 申请步骤 */,
 				817849EC1C28FACA0070ED12 /* 旋转翻转平移 */,
 				817849E51C28E0FE0070ED12 /* QQ电话咨询 */,
 				81F2D2161C0C4A410058D6EB /* 登录界面 */,
@@ -175,6 +187,20 @@
 				817849EE1C29197D0070ED12 /* AnimationsController.m */,
 			);
 			path = "旋转翻转平移";
+			sourceTree = "<group>";
+		};
+		817849FD1C294A310070ED12 /* 申请步骤 */ = {
+			isa = PBXGroup;
+			children = (
+				817849FE1C294A310070ED12 /* WLProgressBar.h */,
+				817849FF1C294A310070ED12 /* WLProgressBar.m */,
+				81784A001C294A310070ED12 /* WLProgressBarBackgroundView.h */,
+				81784A011C294A310070ED12 /* WLProgressBarBackgroundView.m */,
+				81784A021C294A310070ED12 /* 效果图.png */,
+				81784A061C294AED0070ED12 /* ProgressBarController.h */,
+				81784A071C294AED0070ED12 /* ProgressBarController.m */,
+			);
+			path = "申请步骤";
 			sourceTree = "<group>";
 		};
 		81EF47EC1C02BA7A00D010DF /* 图片绘制 */ = {
@@ -292,6 +318,7 @@
 				8109A9BF1BE7530A00EE7882 /* Images.xcassets in Resources */,
 				81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */,
 				81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */,
+				81784A051C294A310070ED12 /* 效果图.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,11 +340,14 @@
 				81F239EC1BFD96E100CD85DB /* Compute.m in Sources */,
 				81F2D2191C0C4A410058D6EB /* LoginView.m in Sources */,
 				8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */,
+				81784A041C294A310070ED12 /* WLProgressBarBackgroundView.m in Sources */,
 				8109A9BA1BE7530A00EE7882 /* ViewController.m in Sources */,
 				8109A9B71BE7530A00EE7882 /* AppDelegate.m in Sources */,
 				817849EB1C28E2B80070ED12 /* CustomerServiceView.m in Sources */,
+				81784A081C294AED0070ED12 /* ProgressBarController.m in Sources */,
 				817849EF1C29197D0070ED12 /* AnimationsController.m in Sources */,
 				8109A9B41BE7530A00EE7882 /* main.m in Sources */,
+				81784A031C294A310070ED12 /* WLProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
