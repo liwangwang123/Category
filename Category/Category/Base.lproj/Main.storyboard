@@ -1,25 +1,195 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cwc-OE-lei">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8j-Zg-6ve">
+                                <rect key="frame" x="274" y="72" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="动画"/>
+                                <connections>
+                                    <action selector="action:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IHj-mU-gE0"/>
+                                    <segue destination="gXY-hD-MPV" kind="push" id="cl7-MQ-mb3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8j-Zg-6ve" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="TkG-HI-dNu"/>
+                            <constraint firstItem="r8j-Zg-6ve" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="giF-y3-n0l"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hkF-4Q-asd"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="345" y="317"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eof-g5-iZE">
+            <objects>
+                <navigationController id="Cwc-OE-lei" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ro0-Vn-kPa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Cc2-HZ-YLW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1E-Kw-zOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="317"/>
+        </scene>
+        <!--Animations Controller-->
+        <scene sceneID="Uj9-Ld-Jx1">
+            <objects>
+                <viewController id="gXY-hD-MPV" customClass="AnimationsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XVI-mg-kX6"/>
+                        <viewControllerLayoutGuide type="bottom" id="njX-Cl-VsS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ouH-HI-55j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lXj-6r-GSs">
+                                <rect key="frame" x="110" y="175" width="100" height="130"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LHQ-cc-gj8"/>
+                                    <constraint firstAttribute="height" constant="130" id="b0s-cW-cri"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-rL-pIF">
+                                <rect key="frame" x="16" y="72" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Flip"/>
+                                <connections>
+                                    <action selector="flipAcion:" destination="gXY-hD-MPV" eventType="touchUpInside" id="2a1-US-JbO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbf-Ep-SIO">
+                                <rect key="frame" x="54" y="72" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="rotating"/>
+                                <connections>
+                                    <action selector="rotatingAction:" destination="gXY-hD-MPV" eventType="touchUpInside" id="ogF-7U-68e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alx-jO-HaB">
+                                <rect key="frame" x="116" y="72" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Move"/>
+                                <connections>
+                                    <action selector="moveAction:" destination="gXY-hD-MPV" eventType="touchUpInside" id="yHW-V2-zIW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4La-qq-nLM">
+                                <rect key="frame" x="164" y="72" width="66" height="30"/>
+                                <animations/>
+                                <state key="normal" title="TurnPage"/>
+                                <connections>
+                                    <action selector="turnPageAction:" destination="gXY-hD-MPV" eventType="touchUpInside" id="vAa-vW-Fe7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhQ-ki-SAq">
+                                <rect key="frame" x="238" y="72" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Scale"/>
+                                <connections>
+                                    <action selector="scaleAction:" destination="gXY-hD-MPV" eventType="touchUpInside" id="Qf8-4B-chg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJJ-2l-X2k">
+                                <rect key="frame" x="16" y="110" width="40" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Invert"/>
+                                <connections>
+                                    <action selector="InvertAction:" destination="gXY-hD-MPV" eventType="touchUpInside" id="RZX-zd-XUb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfb-os-HPo">
+                                <rect key="frame" x="64" y="110" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="打电话1"/>
+                                <connections>
+                                    <action selector="Cell:" destination="gXY-hD-MPV" eventType="touchUpInside" id="ghl-06-MTy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2F-im-P8g">
+                                <rect key="frame" x="124" y="110" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="打电话2"/>
+                                <connections>
+                                    <action selector="Cell:" destination="gXY-hD-MPV" eventType="touchUpInside" id="jZ2-R0-Mpl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T55-gS-vjm">
+                                <rect key="frame" x="186" y="110" width="48" height="30"/>
+                                <animations/>
+                                <state key="normal" title="客服qq"/>
+                                <connections>
+                                    <action selector="CustomerService:" destination="gXY-hD-MPV" eventType="touchUpInside" id="vfC-yE-ERI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.80379749010000001" green="1" blue="0.91393836429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="T55-gS-vjm" firstAttribute="top" secondItem="4La-qq-nLM" secondAttribute="bottom" constant="8" id="0gX-fS-VxZ"/>
+                            <constraint firstItem="T55-gS-vjm" firstAttribute="leading" secondItem="v2F-im-P8g" secondAttribute="trailing" constant="8" id="3gH-7Y-ddJ"/>
+                            <constraint firstItem="v2F-im-P8g" firstAttribute="top" secondItem="Alx-jO-HaB" secondAttribute="bottom" constant="8" id="59w-Cv-509"/>
+                            <constraint firstItem="Xfb-os-HPo" firstAttribute="leading" secondItem="HJJ-2l-X2k" secondAttribute="trailing" constant="8" id="5jq-dM-3V1"/>
+                            <constraint firstItem="4La-qq-nLM" firstAttribute="top" secondItem="XVI-mg-kX6" secondAttribute="bottom" constant="8" id="9Re-74-Q4p"/>
+                            <constraint firstItem="lXj-6r-GSs" firstAttribute="centerY" secondItem="ouH-HI-55j" secondAttribute="centerY" id="9Y7-qP-o6g"/>
+                            <constraint firstItem="HJJ-2l-X2k" firstAttribute="top" secondItem="Vbf-Ep-SIO" secondAttribute="bottom" constant="8" id="F2s-29-eLQ"/>
+                            <constraint firstItem="HJJ-2l-X2k" firstAttribute="leading" secondItem="ouH-HI-55j" secondAttribute="leadingMargin" id="LCN-JH-Jya"/>
+                            <constraint firstItem="Vbf-Ep-SIO" firstAttribute="leading" secondItem="mlV-rL-pIF" secondAttribute="trailing" constant="8" id="Qhy-ni-zSg"/>
+                            <constraint firstItem="v2F-im-P8g" firstAttribute="leading" secondItem="Xfb-os-HPo" secondAttribute="trailing" constant="8" id="VIl-EH-fBj"/>
+                            <constraint firstItem="Alx-jO-HaB" firstAttribute="leading" secondItem="Vbf-Ep-SIO" secondAttribute="trailing" constant="8" id="aaB-Je-ope"/>
+                            <constraint firstItem="4La-qq-nLM" firstAttribute="leading" secondItem="Alx-jO-HaB" secondAttribute="trailing" constant="10" id="h7S-pJ-KlZ"/>
+                            <constraint firstItem="Vbf-Ep-SIO" firstAttribute="top" secondItem="XVI-mg-kX6" secondAttribute="bottom" constant="8" id="i7D-bm-ZPE"/>
+                            <constraint firstItem="JhQ-ki-SAq" firstAttribute="top" secondItem="XVI-mg-kX6" secondAttribute="bottom" constant="8" id="qBB-g9-o9L"/>
+                            <constraint firstItem="mlV-rL-pIF" firstAttribute="top" secondItem="XVI-mg-kX6" secondAttribute="bottom" constant="8" id="qrM-iz-DDP"/>
+                            <constraint firstItem="lXj-6r-GSs" firstAttribute="centerX" secondItem="ouH-HI-55j" secondAttribute="centerX" id="u0G-cf-CaU"/>
+                            <constraint firstItem="Xfb-os-HPo" firstAttribute="top" secondItem="Vbf-Ep-SIO" secondAttribute="bottom" constant="8" id="vYs-Du-ckT"/>
+                            <constraint firstItem="JhQ-ki-SAq" firstAttribute="leading" secondItem="4La-qq-nLM" secondAttribute="trailing" constant="8" id="xOZ-5y-tcE"/>
+                            <constraint firstItem="mlV-rL-pIF" firstAttribute="leading" secondItem="ouH-HI-55j" secondAttribute="leadingMargin" id="y5J-FE-Vc0"/>
+                            <constraint firstItem="Alx-jO-HaB" firstAttribute="top" secondItem="XVI-mg-kX6" secondAttribute="bottom" constant="8" id="zNv-Yo-w6i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xwe-JK-NUw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="lXj-6r-GSs" id="qlb-l9-dhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvC-6F-KGG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="909"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01.jpg" width="188" height="220"/>
+    </resources>
 </document>

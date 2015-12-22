@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface Compute : NSObject
+
 /**
  *  两点之间的距离
  *

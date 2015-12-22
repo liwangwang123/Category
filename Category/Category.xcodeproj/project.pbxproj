@@ -15,6 +15,9 @@
 		8109A9C21BE7530A00EE7882 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8109A9C01BE7530A00EE7882 /* LaunchScreen.xib */; };
 		8109A9CE1BE7530B00EE7882 /* CategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9CD1BE7530B00EE7882 /* CategoryTests.m */; };
 		8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */; };
+		817849EB1C28E2B80070ED12 /* CustomerServiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 817849EA1C28E2B80070ED12 /* CustomerServiceView.m */; settings = {ASSET_TAGS = (); }; };
+		817849EF1C29197D0070ED12 /* AnimationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 817849EE1C29197D0070ED12 /* AnimationsController.m */; settings = {ASSET_TAGS = (); }; };
+		817849F11C291C960070ED12 /* 01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 817849F01C291C960070ED12 /* 01.jpg */; settings = {ASSET_TAGS = (); }; };
 		81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47ED1C02BA7A00D010DF /* about_Info.png */; };
 		81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47EE1C02BA7A00D010DF /* add_download_more.png */; };
 		81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF47F01C02BA7A00D010DF /* DDImageView.m */; };
@@ -48,6 +51,11 @@
 		8109A9CD1BE7530B00EE7882 /* CategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTests.m; sourceTree = "<group>"; };
 		8109A9D81BE7539C00EE7882 /* UIImage+TwoDimensionCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TwoDimensionCode.h"; sourceTree = "<group>"; };
 		8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TwoDimensionCode.m"; sourceTree = "<group>"; };
+		817849E91C28E2B80070ED12 /* CustomerServiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerServiceView.h; sourceTree = "<group>"; };
+		817849EA1C28E2B80070ED12 /* CustomerServiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerServiceView.m; sourceTree = "<group>"; };
+		817849ED1C29197D0070ED12 /* AnimationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsController.h; sourceTree = "<group>"; };
+		817849EE1C29197D0070ED12 /* AnimationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsController.m; sourceTree = "<group>"; };
+		817849F01C291C960070ED12 /* 01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 01.jpg; sourceTree = "<group>"; };
 		81EF47ED1C02BA7A00D010DF /* about_Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_Info.png; sourceTree = "<group>"; };
 		81EF47EE1C02BA7A00D010DF /* add_download_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_download_more.png; sourceTree = "<group>"; };
 		81EF47EF1C02BA7A00D010DF /* DDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImageView.h; sourceTree = "<group>"; };
@@ -97,6 +105,8 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				817849EC1C28FACA0070ED12 /* 旋转翻转平移 */,
+				817849E51C28E0FE0070ED12 /* QQ电话咨询 */,
 				81F2D2161C0C4A410058D6EB /* 登录界面 */,
 				81EF47EC1C02BA7A00D010DF /* 图片绘制 */,
 				81F239E91BFD96E100CD85DB /* 角度和距离 */,
@@ -106,6 +116,7 @@
 				8109A9B81BE7530A00EE7882 /* ViewController.h */,
 				8109A9B91BE7530A00EE7882 /* ViewController.m */,
 				8109A9BB1BE7530A00EE7882 /* Main.storyboard */,
+				817849F01C291C960070ED12 /* 01.jpg */,
 				8109A9BE1BE7530A00EE7882 /* Images.xcassets */,
 				8109A9C01BE7530A00EE7882 /* LaunchScreen.xib */,
 				8109A9B11BE7530A00EE7882 /* Supporting Files */,
@@ -146,6 +157,24 @@
 				8109A9D91BE7539C00EE7882 /* UIImage+TwoDimensionCode.m */,
 			);
 			path = UIImage;
+			sourceTree = "<group>";
+		};
+		817849E51C28E0FE0070ED12 /* QQ电话咨询 */ = {
+			isa = PBXGroup;
+			children = (
+				817849E91C28E2B80070ED12 /* CustomerServiceView.h */,
+				817849EA1C28E2B80070ED12 /* CustomerServiceView.m */,
+			);
+			path = "QQ电话咨询";
+			sourceTree = "<group>";
+		};
+		817849EC1C28FACA0070ED12 /* 旋转翻转平移 */ = {
+			isa = PBXGroup;
+			children = (
+				817849ED1C29197D0070ED12 /* AnimationsController.h */,
+				817849EE1C29197D0070ED12 /* AnimationsController.m */,
+			);
+			path = "旋转翻转平移";
 			sourceTree = "<group>";
 		};
 		81EF47EC1C02BA7A00D010DF /* 图片绘制 */ = {
@@ -259,6 +288,7 @@
 			files = (
 				8109A9BD1BE7530A00EE7882 /* Main.storyboard in Resources */,
 				8109A9C21BE7530A00EE7882 /* LaunchScreen.xib in Resources */,
+				817849F11C291C960070ED12 /* 01.jpg in Resources */,
 				8109A9BF1BE7530A00EE7882 /* Images.xcassets in Resources */,
 				81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */,
 				81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */,
@@ -285,6 +315,8 @@
 				8109A9DA1BE7539C00EE7882 /* UIImage+TwoDimensionCode.m in Sources */,
 				8109A9BA1BE7530A00EE7882 /* ViewController.m in Sources */,
 				8109A9B71BE7530A00EE7882 /* AppDelegate.m in Sources */,
+				817849EB1C28E2B80070ED12 /* CustomerServiceView.m in Sources */,
+				817849EF1C29197D0070ED12 /* AnimationsController.m in Sources */,
 				8109A9B41BE7530A00EE7882 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,10 +443,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Category/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +456,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Category/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
