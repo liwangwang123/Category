@@ -22,6 +22,7 @@
 		81784A041C294A310070ED12 /* WLProgressBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81784A011C294A310070ED12 /* WLProgressBarBackgroundView.m */; settings = {ASSET_TAGS = (); }; };
 		81784A051C294A310070ED12 /* 效果图.png in Resources */ = {isa = PBXBuildFile; fileRef = 81784A021C294A310070ED12 /* 效果图.png */; settings = {ASSET_TAGS = (); }; };
 		81784A081C294AED0070ED12 /* ProgressBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81784A071C294AED0070ED12 /* ProgressBarController.m */; settings = {ASSET_TAGS = (); }; };
+		81AC27B01C2D23F70090251C /* WLEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC27AF1C2D23F70090251C /* WLEncryption.m */; settings = {ASSET_TAGS = (); }; };
 		81EF47F11C02BA7A00D010DF /* about_Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47ED1C02BA7A00D010DF /* about_Info.png */; };
 		81EF47F21C02BA7A00D010DF /* add_download_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 81EF47EE1C02BA7A00D010DF /* add_download_more.png */; };
 		81EF47F31C02BA7A00D010DF /* DDImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EF47F01C02BA7A00D010DF /* DDImageView.m */; };
@@ -67,6 +68,8 @@
 		81784A021C294A310070ED12 /* 效果图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "效果图.png"; sourceTree = "<group>"; };
 		81784A061C294AED0070ED12 /* ProgressBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressBarController.h; sourceTree = "<group>"; };
 		81784A071C294AED0070ED12 /* ProgressBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressBarController.m; sourceTree = "<group>"; };
+		81AC27AE1C2D23F70090251C /* WLEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLEncryption.h; sourceTree = "<group>"; };
+		81AC27AF1C2D23F70090251C /* WLEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLEncryption.m; sourceTree = "<group>"; };
 		81EF47ED1C02BA7A00D010DF /* about_Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_Info.png; sourceTree = "<group>"; };
 		81EF47EE1C02BA7A00D010DF /* add_download_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_download_more.png; sourceTree = "<group>"; };
 		81EF47EF1C02BA7A00D010DF /* DDImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDImageView.h; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 		8109A9B01BE7530A00EE7882 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				81AC27AD1C2D23E10090251C /* 加密解密 */,
 				817849FD1C294A310070ED12 /* 申请步骤 */,
 				817849EC1C28FACA0070ED12 /* 旋转翻转平移 */,
 				817849E51C28E0FE0070ED12 /* QQ电话咨询 */,
@@ -201,6 +205,15 @@
 				81784A071C294AED0070ED12 /* ProgressBarController.m */,
 			);
 			path = "申请步骤";
+			sourceTree = "<group>";
+		};
+		81AC27AD1C2D23E10090251C /* 加密解密 */ = {
+			isa = PBXGroup;
+			children = (
+				81AC27AE1C2D23F70090251C /* WLEncryption.h */,
+				81AC27AF1C2D23F70090251C /* WLEncryption.m */,
+			);
+			path = "加密解密";
 			sourceTree = "<group>";
 		};
 		81EF47EC1C02BA7A00D010DF /* 图片绘制 */ = {
@@ -347,6 +360,7 @@
 				81784A081C294AED0070ED12 /* ProgressBarController.m in Sources */,
 				817849EF1C29197D0070ED12 /* AnimationsController.m in Sources */,
 				8109A9B41BE7530A00EE7882 /* main.m in Sources */,
+				81AC27B01C2D23F70090251C /* WLEncryption.m in Sources */,
 				81784A031C294A310070ED12 /* WLProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
